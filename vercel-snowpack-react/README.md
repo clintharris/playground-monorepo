@@ -63,7 +63,7 @@ Again, the general intent with this demo is using Vercel and the `vercel` CLI to
         
         Note that you can also edit the Vercel project settings using their website:
 
-        ![Screenshot showing Vercel project settings][./docs/vercel-project-settings.png]
+        ![Screenshot showing Vercel project settings](./docs/vercel-project-settings.png)
 
 ## Running locally
 
