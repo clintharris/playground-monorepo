@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "src": "/currentDateTime", "dest": "api/date.js" }
+  ]
+}
