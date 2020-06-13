@@ -2,10 +2,8 @@ import * as React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './HelloWorld';
-import dayjs from 'dayjs';
 
 interface AppProps {}
-const dateFormat = 'YYYY-MM-DD HH:mm:ss.SSS';
 
 function App(props: React.Props<AppProps>) {
   const [date1, setDate1] = React.useState<string>('Loading...');
@@ -15,7 +13,6 @@ function App(props: React.Props<AppProps>) {
     async function getDate1() {
       const res = await fetch('/api/date');
       const serverDate = await res.text();
-      // setDate1(dayjs(serverDate).format(dateFormat));
       setDate1(serverDate);
     }
     getDate1();
@@ -25,7 +22,6 @@ function App(props: React.Props<AppProps>) {
     async function getDate2() {
       const res = await fetch('/currentDateTime');
       const serverDate = await res.text();
-      // setDate2(dayjs(serverDate).format(dateFormat));
       setDate2(serverDate);
     }
     getDate2();
